@@ -1,0 +1,1 @@
+post http://localhost:8080/twitt/api/createUser?id=1&name=teste
