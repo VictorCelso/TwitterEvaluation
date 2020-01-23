@@ -1,6 +1,6 @@
 package org.evaluation.twitter.Repository;
 
-import org.evaluation.twitter.Entity.User;
+import org.evaluation.twitter.Entity.Follower;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
  * UserRepository
  */
 @Repository
-public interface UserRepository extends PagingAndSortingRepository<User, Integer>{
-    
+public interface FollowerRepository extends PagingAndSortingRepository<Follower,Integer>{
+
 }

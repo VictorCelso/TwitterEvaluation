@@ -1,18 +1,21 @@
 package org.evaluation.twitter.Service;
 
+import java.util.Set;
+
+import org.evaluation.twitter.Entity.Tweet;
 import org.evaluation.twitter.Entity.User;
 
 /**
  * ITwitterService
  */
 public interface ITwitterService {
-    public User createAccount(String id, String name);
+    public User createAccount(int id, String name);
 
-    public void twitte(String id, String publication);
+    public Tweet tweet(int id, String publication) throws Exception;
 
-    public void showTwittes(String id);
+    public Set<Tweet> showTweetes(int id) throws Exception;
 
-    public void follow(String followerId, String followedId);
+    public void follow(int followerId, int followedId) throws Exception;
 
-    public void unfollow(String followerId, String followedId);
+    public void unfollow(int followerId, int followedId);
 }
